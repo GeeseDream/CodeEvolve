@@ -1,0 +1,23 @@
+{
+    "name": "CodeEvolve",
+    "image": "geesedream/torch-cuda:2.1.1-cu12.1-cp311",
+    "runArgs": [
+        "--gpus=all"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "donjayamanne.python-extension-pack"
+            ]
+        }
+    },
+    "postCreateCommand":"pip config set global.index-url https://mirror.baidu.com/pypi/simple && pip install -U ipykernel",
+    "mounts": [
+        {
+            "source": "D:/huggingface/",
+            "target": "/root/.cache/huggingface",
+            "type": "bind"
+        }
+    ]
+}
