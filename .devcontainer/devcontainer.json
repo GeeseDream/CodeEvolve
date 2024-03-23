@@ -1,6 +1,6 @@
 {
     "name": "CodeEvolve",
-    "image": "geesedream/torch-cuda:2.1.1-cu12.1-cp311",
+    "image": "pytorch/pytorch:2.2.1-cuda12.1-cudnn8-runtime",
     "runArgs": [
         "--gpus=all"
     ],
