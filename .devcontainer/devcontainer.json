@@ -12,7 +12,7 @@
             ]
         }
     },
-    "postCreateCommand":"pip config set global.index-url https://mirror.baidu.com/pypi/simple && pip install -U ipykernel",
+    "postCreateCommand":"apt update && apt upgrade -y && apt install -y git git-lfs && pip config set global.index-url https://mirror.baidu.com/pypi/simple && pip install -U ipykernel transformers",
     "mounts": [
         {
             "source": "D:/huggingface/",
